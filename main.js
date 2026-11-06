@@ -162,3 +162,5 @@ class QCHSettingTab extends PluginSettingTab {
 		}));
 	}
 }
+
+/* nosourcemap */
