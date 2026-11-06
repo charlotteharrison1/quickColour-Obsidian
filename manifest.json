@@ -1,0 +1,9 @@
+{
+	"id": "quickColour",
+	"name": "Quick colour highlights",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Set your own keys to quickly change highlight colours",
+	"author": "Obsidian",
+	"isDesktopOnly": false
+}
