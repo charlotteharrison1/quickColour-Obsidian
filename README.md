@@ -17,4 +17,3 @@ Default colours:
 
 
 ![alt text](<Screenshot 2026-11-06 at 12.47.07.png>)
-# quickColour-Obsidian
