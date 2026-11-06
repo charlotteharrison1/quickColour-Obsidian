@@ -1,7 +1,7 @@
 {
 	"id": "quickcolour",
 	"name": "Quick colour highlights",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"minAppVersion": "1.0.2",
 	"description": "Set your own keys to quickly change highlight colours.",
 	"author": "Charlotte Harrison",
