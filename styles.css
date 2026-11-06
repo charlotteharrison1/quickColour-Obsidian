@@ -1,23 +1,11 @@
-/* Override Obsidian's default highlight colour wherever our class applies,
-   whichever way CodeMirror nests the spans */
-mark.qch-mark,
-.qch-mark,
-.qch-mark .cm-highlight,
-.cm-highlight .qch-mark {
-	background-color: var(--qch-color) !important;
-	color: var(--text-normal);
-}
- 
-/* Dark mode: the chosen dark colour, or a translucent light colour if none set */
-.theme-dark .qch-mark {
-	background-color: var(--qch-dark, color-mix(in srgb, var(--qch-color) 55%, transparent)) !important;
-	color: var(--text-normal);
+/* Obsidian paints highlights with --text-highlight-bg, so point it at our colour */
+.qch-mark {
+	--text-highlight-bg: var(--qch-color);
+	background-color: var(--text-highlight-bg);
 }
 
-/* Clear Obsidian's own highlight span so the translucent colours don't stack */
-.theme-dark .qch-mark .cm-highlight,
-.theme-dark .cm-highlight:has(.qch-mark) {
-	background-color: transparent !important;
+.theme-dark .qch-mark {
+	--text-highlight-bg: var(--qch-dark);
 }
 
 /* Settings: "Light"/"Dark" labels beside the colour pickers */

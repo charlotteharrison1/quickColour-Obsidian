@@ -14,7 +14,7 @@ const DEFAULT_SETTINGS = {
 const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 // Inline CSS vars for a rule; --qch-dark only when a dark colour is set
-// What the default dark colour looks like: light colour at 55% over the dark background.
+// Default dark colour (used when none is picked): light colour at 55% over the dark background.
 // ponytail: assumes the default dark background #1e1e1e; custom themes may differ slightly.
 const autoDark = (hex) => {
 	const bg = [0x1e, 0x1e, 0x1e];
@@ -23,7 +23,7 @@ const autoDark = (hex) => {
 	).join("");
 };
 
-const colorVars = (r) => `--qch-color: ${r.color}` + (r.dark ? `; --qch-dark: ${r.dark}` : "");
+const colorVars = (r) => `--qch-color: ${r.color}; --qch-dark: ${r.dark ?? autoDark(r.color)}`;
 
 module.exports = class QuickColorHighlights extends Plugin {
 	async onload() {
