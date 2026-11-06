@@ -2,7 +2,7 @@
 
 Super simple Obsidian plugin which lets you set custom highlight colours that can be used with inline md. 
 
-I like writing with colour, but I'm also lazy and like writing everything inline. Existing highlight colour plugins required dragging your mouse over text and selecting colour from a menu. This one allows you to simply assign a letter key to the end of the default Obsidian highlight trigger ==
+I like writing with colour, but I'm also lazy and never want to touch my mouse when writing. Existing highlight colour plugins require dragging your mouse over text and selecting colour from a menu. This one allows you to assign a letter key to the end of the default Obsidian highlight trigger ==, which allows you to trigger highlight colours inline ==b like this==
 
 Default colours:
 ```
