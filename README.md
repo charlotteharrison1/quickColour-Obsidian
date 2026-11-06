@@ -9,8 +9,7 @@ I like writing with colour, but I'm also lazy and never want to touch my mouse w
 
 
 ## Usage
-You start with the following default colours:
-Default colours:
+Defaults:
 ```
 ==p == - pink
 ==b == - blue
