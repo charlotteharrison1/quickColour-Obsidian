@@ -1,11 +1,10 @@
-/* Obsidian paints highlights with --text-highlight-bg, so point it at our colour */
-.qch-mark {
-	--text-highlight-bg: var(--qch-color);
-	background-color: var(--text-highlight-bg);
+/* Repeating the class outranks theme highlight rules (e.g. `body .markdown-rendered mark`) without !important */
+.qch-mark.qch-mark.qch-mark {
+	background-color: var(--qch-color);
 }
 
-.theme-dark .qch-mark {
-	--text-highlight-bg: var(--qch-dark);
+.theme-dark .qch-mark.qch-mark.qch-mark {
+	background-color: var(--qch-dark);
 }
 
 /* Settings: "Light"/"Dark" labels beside the colour pickers */
